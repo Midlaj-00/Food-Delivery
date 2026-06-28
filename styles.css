@@ -9,8 +9,8 @@
 :root {
   /* Primary */
   --primary: #FC8019;
-  --primary-light: #FFB366;
-  --primary-dark: #E06B00;
+  --primary-light: #66ff91;
+  --primary-dark: #e0001a;
   --primary-glow: rgba(252, 128, 25, 0.35);
 
   /* Backgrounds */
@@ -196,7 +196,7 @@ input {
   background: rgba(17, 17, 17, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.486);
   padding: var(--space-sm) 0;
 }
 
