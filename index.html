@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Foodie Express — Premium food delivery. Order from the best restaurants near you with fast delivery and exclusive offers.">
+  <title>Foodie Express — Delicious Food, Delivered Fast</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar__logo" data-action="go-home">
+        <div class="navbar__logo-icon">🍽️</div>
+        <div class="navbar__logo-text">Foodie<span>Express</span></div>
+      </div>
+      <div class="navbar__links" id="navbar-links">
+        <a class="navbar__link" href="#/" data-action="go-home">Home</a>
+        <a class="navbar__link" href="#/restaurants" data-action="order-now">Restaurants</a>
+        <button class="navbar__cart-btn" data-action="open-cart">
+          🛒 Cart
+          <span class="navbar__cart-badge" id="cart-badge">0</span>
+        </button>
+      </div>
+      <div class="navbar__mobile-toggle" id="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======== PAGE: LANDING ======== -->
+  <section class="page active" id="page-landing">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero__video-wrap">
+        <video class="hero__video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&h=1080&fit=crop">
+          <source src="https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          #1 Food Delivery App
+        </div>
+        <h1 class="hero__title">
+          Delicious Food,<br><span>Delivered Fast</span>
+        </h1>
+        <p class="hero__subtitle">
+          From your favorite local restaurants to your doorstep in minutes. Explore cuisines, discover deals, and satisfy every craving.
+        </p>
+        <div class="hero__cta-group">
+          <button class="btn btn--primary" data-action="order-now">
+            🚀 Order Now
+          </button>
+          <button class="btn btn--outline" data-action="order-now">
+            Explore Restaurants →
+          </button>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="hero__stat-number">500+</div>
+            <div class="hero__stat-label">Restaurants</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number">50K+</div>
+            <div class="hero__stat-label">Happy Customers</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number">30 min</div>
+            <div class="hero__stat-label">Avg. Delivery</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPULAR CUISINES -->
+    <div class="section" id="cuisines-section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">What's on your mind?</span>
+          <h2 class="section__title">Explore Popular Cuisines</h2>
+          <p class="section__subtitle">From comfort food to exotic flavors, find exactly what you're craving</p>
+        </div>
+        <div class="cuisines__grid reveal">
+          <div class="cuisine-card" data-action="order-now">
+            <span class="cuisine-card__icon">🍛</span>
+            <span class="cuisine-card__name">North Indian</span>
+          </div>
+          <div class="cuisine-card" data-action="order-now">
+            <span class="cuisine-card__icon">🥘</span>
+            <span class="cuisine-card__name">South Indian</span>
+          </div>
+          <div class="cuisine-card" data-action="order-now">
+            <span class="cuisine-card__icon">🥡</span>
+            <span class="cuisine-card__name">Chinese</span>
+          </div>
+          <div class="cuisine-card" data-action="order-now">
+            <span class="cuisine-card__icon">🍕</span>
+            <span class="cuisine-card__name">Italian</span>
+          </div>
+          <div class="cuisine-card" data-action="order-now">
+            <span class="cuisine-card__icon">🍚</span>
+            <span class="cuisine-card__name">Biryani</span>
+          </div>
+          <div class="cuisine-card" data-action="order-now">
+            <span class="cuisine-card__icon">🍔</span>
+            <span class="cuisine-card__name">Burgers</span>
+          </div>
+          <div class="cuisine-card" data-action="order-now">
+            <span class="cuisine-card__icon">🍣</span>
+            <span class="cuisine-card__name">Japanese</span>
+          </div>
+          <div class="cuisine-card" data-action="order-now">
+            <span class="cuisine-card__icon">🍰</span>
+            <span class="cuisine-card__name">Desserts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <div class="section how-it-works">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Simple & Fast</span>
+          <h2 class="section__title">How It Works</h2>
+          <p class="section__subtitle">Get your food delivered in 3 easy steps</p>
+        </div>
+        <div class="steps reveal">
+          <div class="step-card">
+            <div class="step-card__number">1</div>
+            <div class="step-card__icon">📱</div>
+            <h3 class="step-card__title">Browse & Choose</h3>
+            <p class="step-card__desc">Explore restaurants and cuisines. Find the perfect meal from hundreds of options.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__number">2</div>
+            <div class="step-card__icon">🛒</div>
+            <h3 class="step-card__title">Add to Cart & Order</h3>
+            <p class="step-card__desc">Build your perfect meal. Add items to your cart and place your order in seconds.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__number">3</div>
+            <div class="step-card__icon">🚀</div>
+            <h3 class="step-card__title">Fast Delivery</h3>
+            <p class="step-card__desc">Sit back and relax. Your food will be at your doorstep in 30 minutes or less!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURED RESTAURANTS -->
+    <div class="section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Top Picks</span>
+          <h2 class="section__title">Featured Restaurants</h2>
+          <p class="section__subtitle">Handpicked restaurants loved by thousands of food lovers</p>
+        </div>
+        <div class="featured__grid reveal" id="featured-grid">
+          <!-- Rendered by JS -->
+        </div>
+        <div style="text-align: center; margin-top: var(--space-xl);" class="reveal">
+          <button class="btn btn--primary" data-action="order-now">View All Restaurants →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="section" style="background: var(--bg-surface);">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Reviews</span>
+          <h2 class="section__title">What Our Customers Say</h2>
+          <p class="section__subtitle">Don't just take our word for it — hear from our happy foodies</p>
+        </div>
+        <div class="testimonials__grid reveal">
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-card__text">"The delivery was incredibly fast and the food arrived piping hot. Butter Chicken from Spice Garden was absolutely divine! Best food app ever."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">R</div>
+              <div>
+                <div class="testimonial-card__name">Rahul Sharma</div>
+                <div class="testimonial-card__location">Mumbai</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-card__text">"I'm obsessed with the variety of cuisines available! The sushi from Sushi Zen was restaurant-quality. The interface is so smooth and easy to use."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">P</div>
+              <div>
+                <div class="testimonial-card__name">Priya Patel</div>
+                <div class="testimonial-card__location">Bangalore</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-card__text">"The best deals and offers I've found anywhere. Free delivery on most orders and the rewards program is amazing. Highly recommend Foodie Express!"</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">A</div>
+              <div>
+                <div class="testimonial-card__name">Arjun Mehta</div>
+                <div class="testimonial-card__location">Delhi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA BANNER -->
+    <div class="section">
+      <div class="container">
+        <div class="reveal" style="background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: var(--radius-xl); padding: var(--space-3xl) var(--space-2xl); text-align: center; position: relative; overflow: hidden;">
+          <div style="position: absolute; inset: 0; background: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22none%22 stroke=%22rgba(255,255,255,0.08)%22 stroke-width=%222%22/></svg>') repeat; opacity: 0.5;"></div>
+          <div style="position: relative; z-index: 1;">
+            <h2 style="font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 800; margin-bottom: var(--space-md); color: #fff;">Hungry? You're Just a Click Away!</h2>
+            <p style="font-size: 1.1rem; color: rgba(255,255,255,0.85); margin-bottom: var(--space-xl); max-width: 500px; margin-left: auto; margin-right: auto;">Join thousands of foodies who order with Foodie Express every day. Exclusive deals and fast delivery await!</p>
+            <button class="btn" data-action="order-now" style="background: #fff; color: var(--primary-dark); font-weight: 700; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">🍽️ Start Ordering Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <div class="navbar__logo" style="margin-bottom: 0;">
+              <div class="navbar__logo-icon">🍽️</div>
+              <div class="navbar__logo-text">Foodie<span>Express</span></div>
+            </div>
+            <p class="footer__brand-desc">Delivering happiness one meal at a time. Your favorite restaurants, now at your doorstep.</p>
+            <div class="footer__social">
+              <a class="footer__social-icon" href="#" aria-label="Facebook">📘</a>
+              <a class="footer__social-icon" href="#" aria-label="Instagram">📸</a>
+              <a class="footer__social-icon" href="#" aria-label="Twitter">🐦</a>
+              <a class="footer__social-icon" href="#" aria-label="YouTube">📺</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer__heading">Company</h4>
+            <a class="footer__link" href="#">About Us</a>
+            <a class="footer__link" href="#">Careers</a>
+            <a class="footer__link" href="#">Blog</a>
+            <a class="footer__link" href="#">Press</a>
+          </div>
+          <div>
+            <h4 class="footer__heading">Support</h4>
+            <a class="footer__link" href="#">Help Center</a>
+            <a class="footer__link" href="#">Partner with Us</a>
+            <a class="footer__link" href="#">Ride with Us</a>
+            <a class="footer__link" href="#">Contact Us</a>
+          </div>
+          <div>
+            <h4 class="footer__heading">Legal</h4>
+            <a class="footer__link" href="#">Terms & Conditions</a>
+            <a class="footer__link" href="#">Privacy Policy</a>
+            <a class="footer__link" href="#">Cookie Policy</a>
+            <a class="footer__link" href="#">Refund Policy</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 Foodie Express. All rights reserved. Made with ❤️ for food lovers.</p>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- ======== PAGE: RESTAURANTS LIST ======== -->
+  <section class="page" id="page-restaurants">
+    <div class="restaurants-page__header">
+      <div class="container">
+        <h1 class="restaurants-page__title">All Restaurants</h1>
+        <div class="restaurants-page__controls">
+          <div class="search-bar">
+            <span class="search-bar__icon">🔍</span>
+            <input class="search-bar__input" type="text" id="search-input" placeholder="Search for restaurants or cuisines..." autocomplete="off">
+          </div>
+          <select class="sort-select" id="sort-select">
+            <option value="default">Sort By</option>
+            <option value="rating">Rating: High to Low</option>
+            <option value="delivery">Delivery Time</option>
+            <option value="cost-low">Cost: Low to High</option>
+            <option value="cost-high">Cost: High to Low</option>
+          </select>
+        </div>
+        <div class="filter-pills" id="filter-pills" style="margin-top: var(--space-md);">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </div>
+    <div class="restaurants-page__grid">
+      <div class="container">
+        <div class="restaurants-grid" id="restaurants-grid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PAGE: RESTAURANT DETAIL ======== -->
+  <section class="page" id="page-restaurant-detail">
+    <div id="restaurant-detail-content">
+      <!-- Rendered by JS -->
+    </div>
+  </section>
+
+  <!-- ======== FLOATING CART BAR ======== -->
+  <div class="floating-cart" id="floating-cart">
+    <div class="floating-cart__inner" data-action="open-cart">
+      <div class="floating-cart__info">
+        0 items | ₹0
+      </div>
+      <div class="floating-cart__action">
+        View Cart →
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== CART OVERLAY ======== -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <!-- ======== CART SIDEBAR ======== -->
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-sidebar__header">
+      <h2 class="cart-sidebar__title">Your Cart</h2>
+      <button class="cart-sidebar__close" data-action="close-cart">✕</button>
+    </div>
+    <div class="cart-sidebar__restaurant" id="cart-restaurant-name" style="display: none;">
+      <!-- Rendered by JS -->
+    </div>
+
+    <!-- Empty state -->
+    <div class="cart-sidebar__empty" id="cart-empty">
+      <div class="cart-sidebar__empty-icon">🛒</div>
+      <div class="cart-sidebar__empty-text">Your cart is empty</div>
+      <p class="cart-sidebar__empty-sub">Add items from a restaurant to start building your order</p>
+      <button class="btn btn--primary btn--sm" data-action="order-now" onclick="closeCartSidebar()">Browse Restaurants</button>
+    </div>
+
+    <!-- Cart items -->
+    <div class="cart-sidebar__items" id="cart-items" style="display: none;">
+      <!-- Rendered by JS -->
+    </div>
+
+    <!-- Footer with bill -->
+    <div class="cart-sidebar__footer" id="cart-footer" style="display: none;">
+      <div class="cart-sidebar__bill">
+        <div class="cart-sidebar__bill-title">Bill Details</div>
+        <div class="cart-sidebar__bill-row">
+          <span>Item Total</span>
+          <span id="bill-subtotal">₹0</span>
+        </div>
+        <div class="cart-sidebar__bill-row">
+          <span>Delivery Fee</span>
+          <span id="bill-delivery">₹40</span>
+        </div>
+        <div class="cart-sidebar__bill-row">
+          <span>Taxes & Charges (5%)</span>
+          <span id="bill-tax">₹0</span>
+        </div>
+        <div class="cart-sidebar__bill-row cart-sidebar__bill-row--total">
+          <span>To Pay</span>
+          <span id="bill-total">₹0</span>
+        </div>
+      </div>
+      <button class="cart-sidebar__checkout-btn" data-action="place-order">
+        Place Order
+      </button>
+    </div>
+  </div>
+
+  <!-- ======== ORDER SUCCESS MODAL ======== -->
+  <div class="order-success-overlay" id="order-success-overlay">
+    <div class="order-success">
+      <div class="order-success__icon">🎉</div>
+      <h2 class="order-success__title">Order Placed!</h2>
+      <p class="order-success__text">Your order has been placed successfully! Your delicious food is being prepared and will arrive shortly.</p>
+      <button class="order-success__btn" data-action="close-order-success">Continue Browsing</button>
+    </div>
+  </div>
+
+  <!-- ======== TOAST CONTAINER ======== -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
